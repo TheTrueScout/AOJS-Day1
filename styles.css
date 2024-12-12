@@ -53,7 +53,12 @@ svg {
   padding-left: 0.7rem;
   border-left: 1px solid white;
   z-index: 10;
+  color: var(--JavaDark);
   transition: 0.2s;
+
+  &::placeholder {
+    color: var(--JavaDark);
+  }
 
   &:focus {
     outline: 1px solid white;
@@ -99,6 +104,10 @@ svg {
 
 .wrapper[data-visible="true"] .password-input {
   color: white;
+
+  &::placeholder {
+    color: white;
+  }
 }
 
 .wrapper[data-visible="true"] .lock-icon {
